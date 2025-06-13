@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# ⚽ Football Champions – Jeu de Football Dynamique en React
 
-## Project info
+**Football Champions** est un jeu de football moderne, immersif et réactif, construit avec React, TypeScript, et Tailwind CSS. Inspiré des jeux sportifs interactifs, il allie animations fluides, physique réaliste, effets visuels et un design vibrant.
 
-**URL**: https://lovable.dev/projects/3939947e-5e14-4157-9570-9e02029fe566
+---
 
-## How can I edit this code?
+## ✨ Vision du jeu
 
-There are several ways of editing your application.
+Un terrain de football interactif avec une **vue en perspective réaliste**, des **joueurs animés**, un **ballon physique** et une **interface stylisée**. Tout cela dans une ambiance énergique et moderne, avec un **style visuel inspiré des jeux sportifs actuels**.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3939947e-5e14-4157-9570-9e02029fe566) and start prompting.
+## 🖼️ Design & Interface
 
-Changes made via Lovable will be committed automatically to this repo.
+- Terrain vert réaliste avec toutes les **lignes officielles**
+- Joueurs d’équipes **bleue** et **rouge**
+- Ballon avec **effet de rebond** et mouvement fluide
+- Interface moderne avec **cartes semi-transparentes**
+- **Effets visuels avancés** : lueurs, ombres dynamiques, gradients
+- **Typographie sportive** et **animations CSS fluides**
+- **Gradients animés** et **particules décoratives**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ⚙️ Fonctionnalités
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- ✅ **Grille de terrain interactive** avec buts et lignes
+- 🧍 **Joueurs contrôlables** avec logique de sélection et déplacement
+- 🏐 **Physique du ballon** (rebonds, collisions réalistes)
+- 🥅 **Détection de but** avec animation et célébration
+- 📊 **Scoreboard** en temps réel (score + chronomètre)
+- 🔁 **Boutons de contrôle** (play/pause, reset, instructions)
+- 🔔 **Toasts de notification** pour les événements (buts, reset)
+- 🧩 Architecture modulaire avec composants dédiés :
+  - `GameField.tsx`, `Player.tsx`, `Ball.tsx`, `ScoreBoard.tsx`, `GameControls.tsx`
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎮 Comment jouer
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Cliquez sur un joueur** pour le sélectionner
+2. **Cliquez sur une position du terrain** pour le faire courir
+3. Le joueur se déplace vers le ballon
+4. Si proche du ballon, un **tir** est déclenché automatiquement
+5. Essayez de marquer dans le but adverse !
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🧰 Stack technique
+
+- ⚛️ **React** + **TypeScript**
+- 💨 **Tailwind CSS** pour les styles dynamiques
+- 🎨 **shadcn/ui** pour des composants stylisés
+- 🌀 **Framer Motion** (animations avancées)
+- 🧠 **State management** simple pour contrôle du jeu et scores
+
+---
+
+## 🚀 Lancer le jeu localement
+
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/<TON_UTILISATEUR>/football-champions.git
+
+# 2. Aller dans le dossier
+cd football-champions
+
+# 3. Installer les dépendances
+npm install
+
+# 4. Lancer le jeu en local
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3939947e-5e14-4157-9570-9e02029fe566) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
