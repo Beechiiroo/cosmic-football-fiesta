@@ -61,6 +61,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Football game colors
+				field: {
+					DEFAULT: 'hsl(var(--field))',
+					dark: 'hsl(var(--field-dark))',
+					line: 'hsl(var(--field-line))'
+				},
+				team: {
+					home: 'hsl(var(--team-home))',
+					away: 'hsl(var(--team-away))',
+					neutral: 'hsl(var(--team-neutral))'
+				},
+				game: {
+					ball: 'hsl(var(--game-ball))',
+					goal: 'hsl(var(--game-goal))',
+					highlight: 'hsl(var(--game-highlight))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +100,41 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				// Football game animations
+				'bounce-ball': {
+					'0%, 100%': { transform: 'translateY(0px) scale(1)' },
+					'50%': { transform: 'translateY(-20px) scale(1.1)' }
+				},
+				'run-player': {
+					'0%, 100%': { transform: 'translateX(0px) rotate(0deg)' },
+					'25%': { transform: 'translateX(5px) rotate(2deg)' },
+					'75%': { transform: 'translateX(-5px) rotate(-2deg)' }
+				},
+				'goal-celebration': {
+					'0%': { transform: 'scale(1) rotate(0deg)' },
+					'25%': { transform: 'scale(1.2) rotate(5deg)' },
+					'50%': { transform: 'scale(1.3) rotate(-5deg)' },
+					'75%': { transform: 'scale(1.2) rotate(5deg)' },
+					'100%': { transform: 'scale(1) rotate(0deg)' }
+				},
+				'slide-in': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(0)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(34, 197, 94, 0.4)' },
+					'50%': { boxShadow: '0 0 40px rgba(34, 197, 94, 0.8)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-ball': 'bounce-ball 1.5s ease-in-out infinite',
+				'run-player': 'run-player 0.6s ease-in-out infinite',
+				'goal-celebration': 'goal-celebration 1s ease-in-out',
+				'slide-in': 'slide-in 0.5s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
